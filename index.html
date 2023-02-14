@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+<section class="w-full h-screen fixed" style="background-image: url('bggr.jpg'); background-size: cover; background-repeat: no-repeat; z-index: -2; opacity: 0.8;">
+  </section>
   
   <!-- header -->
   <nav x-data="{ isOpen: false }" class="relative-white shadow dark:bg-gray-800 dark:text-gray-100">
@@ -57,10 +60,10 @@
   
             <button type="button" class="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
               <div class="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
-                <img src="logo.jpg" class="object-cover w-full h-full" alt="avatar">
+                <img src="rute.jpg" class="object-cover w-full h-full" alt="avatar">
               </div>
   
-              <h3 class="mx-2 text-gray-700 dark:text-gray-200 lg:hidden">Ek Pahal</h3>
+              <h3 class="mx-2 text-gray-700 dark:text-gray-200 lg:hidden">Rurendra Tegor <small class="text-blue-500">(Website developer)</small></h3>
             </button>
           </div>
         </div>
@@ -70,11 +73,11 @@
   
   <!-- marquee -->
   <div class="container px-10 pt-5 md:pt-20 text-red-500 dark:bg-gray-900">
-    <marquee behavior="scroll" direction="left">निशुल्क कंप्यूटर प्रशिक्षण कार्यक्रम <u>सिरसौद</u> में अपना नाम दर्ज करवाने के लिए संपर्क करें मोबाइल नं. +91 997 771 7496 , +91 777 304 1829  या हमारी वेबसाइट पर इनरोल नाउ पर क्लिक करके अपना फॉर्म भरें। <abbr title="Sirsoud branch">सिरसौद शाखा</abbr></marquee>
+    <marquee behavior="scroll" direction="left">निशुल्क कंप्यूटर प्रशिक्षण कार्यक्रम <u>सिरसौद</u> में अपना नाम दर्ज करवाने के लिए संपर्क करें मोबाइल नं. +91 997 771 7496 , +91 777 304 1829 , +91 834 982 8824 या हमारी वेबसाइट पर इनरोल नाउ पर क्लिक करके अपना फॉर्म भरें। <abbr title="Sirsoud branch">सिरसौद शाखा</abbr></marquee>
   </div>
   
   <!-- hero -->
-  <header class="bg-white dark:bg-gray-900">
+  <header class="dark:bg-gray-900">
     <div class="container px-6 py-8 md:pt-5 mx-auto">
         <div class="items-center lg:flex">
             <div class="w-full lg:w-1/2">
@@ -138,7 +141,7 @@
 
 
 <!-- team card -->
-<section class="bg-white dark:bg-gray-900" id="team">
+<section class=" dark:bg-gray-900" id="team">
     <div class="container px-6 py-10 mx-auto">
         <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our <span class="text-blue-500">Executive Team</span></h1>
 
@@ -239,7 +242,7 @@
 
 
 <!-- contact -->
-<section class="bg-white dark:bg-gray-900" id="contactus">
+<section class="dark:bg-gray-900" id="contactus">
   
     <div class="container grid gap-8 px-6 py-12 mx-auto lg:grid-cols-3">
       <div class="w-full">
@@ -312,7 +315,7 @@
 
 
 <!-- enroll form -->
-<section class="bg-white dark:bg-gray-900" id="enroll">
+<section class="dark:bg-gray-900" id="enroll">
     <div class="flex justify-center md:py-24 mx-auto md:px-10">
         <div class="hidden bg-blue-50 lg:block lg:w-2/5 rounded-lg w-4/5 md:w-full">
           <img  src="/Ek Pahal/Login-rafiki.png" alt="">
@@ -339,13 +342,13 @@
   <input placeholder="father Name" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="text" id="fatherName" required>
   </div>
 <div> <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Date of Birth:</label>
-  <input placeholder="Date of birth" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="date" id="dob" required>
+  <input placeholder="Date-of-birth" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="date" id="dob" required>
   </div>
 <div><label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Mobile Number:</label>
-  <input placeholder="+91 000 000 0000" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="text" id="mobileNumber" required>
+  <input placeholder="+91 000 000 0000" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="number" id="mobileNumber" required>
   </div>
 <div><label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Aadhar Number:</label>
-  <input placeholder="0000 0000 0000" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="text" id="aadharNumber" required>
+  <input placeholder="0000 0000 0000" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="number" id="aadharNumber" required>
   </div>
 <div><label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Your Address:</label>
     <input placeholder="Enter Village & city name" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" type="text" id="address" required>
@@ -409,7 +412,7 @@
 
 
 
-<footer class="bg-gray-100 dark:bg-stone-900 ">
+<footer class="bg-gray-50/60 dark:bg-stone-900 ">
     <div class="container px-6 py-8 mx-auto">
         <div class="flex flex-col items-center text-center">
             <a href="#" class="flex flex-wrap dark:text-gray-100">
