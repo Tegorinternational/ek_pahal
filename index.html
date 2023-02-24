@@ -12,10 +12,36 @@
   <link rel="stylesheet" href="style.css">
   <script src="cdn.tailwind.com"></script>
   <script src="//unpkg.com/alpinejs" defer></script>
- 
+ <style>
+#preloader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #preloader img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      #content {
+        display: none;
+      }
+</style>
 </head>
 
 <body>
+
+<div id="preloader">
+    <img src="/sh.gif" alt="Image">
+   </div>
 
 <section class="w-full h-screen fixed" style="background-image: url('https://tegorinternational.github.io/ek_pahal/bggr.jpg'); background-size: cover; background-repeat: no-repeat; z-index: -2; opacity: 0.8;">
   </section>
@@ -548,6 +574,18 @@ form.addEventListener("submit", function(event) {
 
 </script>
 
+
+<script>
+
+window.addEventListener("load", function() {
+  var image = new Image();
+  image.src = document.querySelector("#preloader img").src;
+  image.onload = function() {
+    document.getElementById("preloader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  };
+});
+</script>
 
 
 </body>
